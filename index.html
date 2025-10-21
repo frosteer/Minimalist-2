@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal Split Editor</title>
+
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Journal Split Editor - HTML -->
+  <div class="toolbar">
+    <button id="addPanelBtn">＋ Add Panel</button>
+  </div>
+
+  <div id="container" class="container"></div>
+
+  <div class="settings">
+    <div class="settings-icon">⚙️</div>
+    <div class="settings-panel">
+      <label>Font Size: <input type="range" id="fontSize" min="12" max="32" value="16"></label>
+      <label>Font Color: <input type="color" id="fontColor" value="#ffffff"></label>
+      <label>Background: <input type="color" id="bgColor" value="#121212"></label>
+      <label>Font:
+        <select id="fontSelect">
+          <option value="'Poppins', sans-serif">Poppins</option>
+          <option value="'Montserrat', sans-serif">Montserrat</option>
+          <option value="'Avenir Next', sans-serif">Avenir Next</option>
+          <option value="'SF Pro Display', sans-serif">SF Pro Display</option>
+          <option value="'Neue Haas Grotesk', sans-serif">Neue Haas Grotesk</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <!-- Link to your JS -->
+  <script src="script.js"></script>
+</body>
+</html>
